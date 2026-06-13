@@ -7,10 +7,10 @@ import streamlit as st
 import yaml
 import plotly.express as px
 
-from collectors.sample_data import sample_mentions
-from collectors.rss_news import collect_rss_feeds, collect_google_news
-from collectors.reddit import collect_reddit_public
-from collectors.municipal import collect_municipal_rss
+from sample_data import sample_mentions
+from rss_news import collect_rss_news
+from reddit import collect_reddit
+from municipal import collect_municipal
 from analysis.classify import classify_mention
 from analysis.risk_score import calculate_risk
 from analysis.brief import build_weekly_brief
