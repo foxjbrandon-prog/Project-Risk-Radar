@@ -1162,7 +1162,45 @@ projects:
       - https://news.google.com/rss/search?q=%22treaty%20rights%22%20%22infrastructure%22%20Ontario&hl=en-CA&gl=CA&ceid=CA:en
       - https://news.google.com/rss/search?q=%22cost%20overrun%22%20infrastructure%20Ontario&hl=en-CA&gl=CA&ceid=CA:en
       - https://news.google.com/rss/search?q=%22taxpayer%20money%22%20infrastructure%20opposition%20Ontario&hl=en-CA&gl=CA&ceid=CA:en
-      
+
+      #official_direct_sources:
+      - name: "Hydro One Sudbury to Barrie Project Page"
+        url: "https://www.hydroone.com/about/corporate-information/major-projects/sudbury-to-barrie"
+        type: "project_page"
+    
+      - name: "Environmental Registry of Ontario Search"
+        url: "https://ero.ontario.ca/search"
+        type: "registry"
+    
+      - name: "Canadian Impact Assessment Registry"
+        url: "https://iaac-aeic.gc.ca/050/evaluations"
+        type: "registry"
+    
+      - name: "OEB Major Decisions"
+        url: "https://www.oeb.ca/applications/major-decisions"
+        type: "regulatory"
+    
+      - name: "Hydro One Transmission System Projects"
+        url: "https://www.hydroone.com/about/corporate-information/major-projects"
+        type: "project_page"
+        
+      #official_meeting_sources:
+      - name: "City of Barrie Council and Committee Meetings"
+        url: "https://www.barrie.ca/government-news/mayor-council-committees/meetings"
+        type: "municipal_meetings"
+
+      - name: "City of Orillia CivicWeb"
+        url: "https://orillia.civicweb.net/Portal/"
+        type: "municipal_meetings"
+
+      - name: "Greater Sudbury eSCRIBE"
+        url: "https://pub-greatersudbury.escribemeetings.com/"
+        type: "municipal_meetings"
+
+      - name: "Township of Muskoka Lakes CivicWeb"
+        url: "https://muskokalakes.civicweb.net/Portal/"
+        type: "municipal_meetings"
+        
   - id: example_station
     name: Example Municipal Transformer Station
     type: transformer station
