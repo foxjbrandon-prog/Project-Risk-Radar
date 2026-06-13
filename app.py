@@ -8,12 +8,12 @@ import yaml
 import plotly.express as px
 
 from sample_data import sample_mentions
-from rss_news import collect_rss_news
-from reddit import collect_reddit
-from municipal import collect_municipal
-from analysis.classify import classify_mention
-from analysis.risk_score import calculate_risk
-from analysis.brief import build_weekly_brief
+from rss_news import collect_rss_feeds, collect_google_news
+from reddit import collect_reddit_public
+from municipal import collect_municipal_rss
+from classify import classify_mention
+from risk_score import calculate_risk
+from brief import build_weekly_brief
 
 ROOT = Path(__file__).parent
 DATA_PATH = ROOT / "data" / "mentions.csv"
