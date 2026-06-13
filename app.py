@@ -11,6 +11,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 import yaml
+import requests
+from bs4 import BeautifulSoup
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 ROOT = Path(__file__).parent
@@ -163,6 +165,71 @@ def read_feed(url: str, project: dict, mode: str, max_items: int = 20) -> list[d
     return rows
 
 
+def read_direct_page(url: str, project: dict, mode: str) -> list[dict]:
+    rows = []
+
+    try:
+        response = requests.get(
+            url,
+            timeout=15,
+            headers={"User-Agent": "Mozilla/5.0 ProjectRiskRadar/1.0"}
+        )
+
+        if response.status_code >= 400:
+            return rows
+
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        title = clean_text(soup.title.string if soup.title else url)
+
+        for tag in soup(["script", "style", "noscript"]):
+            tag.decompose()
+
+        page_text = clean_text(soup.get_text(" "))
+        summary = page_text[:1200]
+
+        if not summary:
+            return rows
+
+        search_terms = []
+        search_terms.append(project.get("name", ""))
+        search_terms.extend(project.get("aliases", []))
+        search_terms.extend(project.get("locations", []))
+        search_terms.extend(project.get("issue_keywords", []))
+
+        lower_text = f"{title} {summary}".lower()
+
+        if not any(str(term).lower() in lower_text for term in search_terms if term):
+            return rows
+
+        sent, sent_score = sentiment_label(f"{title} {summary}")
+        triggers = detect_triggers(f"{title} {summary}", project.get("issue_keywords", []))
+        source_type = detect_source_type(title, url, summary)
+        level, score = risk_score(sent, triggers, title, summary, source_type)
+
+        rows.append({
+            "id": stable_id(project.get("id", project.get("name", "project")), url, title, mode),
+            "scan_time_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "project_id": project.get("id", ""),
+            "project_name": project.get("name", ""),
+            "mode": mode,
+            "source_type": source_type,
+            "title": title,
+            "summary": summary,
+            "url": url,
+            "published": "Direct official source scan",
+            "sentiment": sent,
+            "sentiment_score": sent_score,
+            "triggers": "; ".join(triggers),
+            "risk_level": level,
+            "risk_score": score,
+        })
+
+    except Exception:
+        return rows
+
+    return rows
+
 def append_unique(csv_path: Path, rows: list[dict]) -> pd.DataFrame:
     new_df = pd.DataFrame(rows)
     if csv_path.exists():
@@ -225,8 +292,23 @@ def run_live_scan(project: dict) -> pd.DataFrame:
 
 def run_social_scan(project: dict) -> tuple[pd.DataFrame, dict]:
     rows = []
+
+    # 1. Search historical opposition patterns using generated Google News RSS queries
     for q in social_risk_queries(project):
         rows.extend(read_feed(google_news_url(q), project, "Social Risk Assessment", max_items=10))
+
+    # 2. Also scan the project's configured source_urls
+    for url in list(project.get("source_urls", []) or [])[:80]:
+        url_text = str(url).lower()
+
+        # Google News RSS or other RSS-like feeds
+        if "rss" in url_text or "feed" in url_text or "news.google.com" in url_text:
+            rows.extend(read_feed(url, project, "Social Risk Assessment", max_items=10))
+
+        # Normal official webpages
+        else:
+            rows.extend(read_direct_page(url, project, "Social Risk Assessment"))
+
     findings = append_unique(SOCIAL_CSV, rows)
     summary = summarize_social_risk(project, findings)
     update_summary(summary)
