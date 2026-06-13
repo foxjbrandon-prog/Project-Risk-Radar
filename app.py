@@ -11,27 +11,37 @@ from sample_data import sample_mentions
 from rss_news import collect_rss_feeds, collect_google_news
 from reddit import collect_reddit_public
 from municipal import collect_municipal_rss
-from risk_score import calculate_risk
-from brief import build_weekly_brief
+def calculate_risk(sentiment, issues, source=""):
+    score = 10
 
-def classify_mention(text, issue_keywords):
-    text_lower = str(text).lower()
+    if sentiment == "Negative":
+        score += 30
+    elif sentiment == "Neutral":
+        score += 10
 
-    sentiment = "Neutral"
-    negative_words = ["oppose", "concern", "risk", "angry", "lawsuit", "damage", "unsafe", "noise", "traffic", "wetland", "trees"]
-    positive_words = ["support", "benefit", "opportunity", "needed", "improve", "approve"]
+    high_risk_terms = ["wetland", "trees", "property", "Indigenous", "lawsuit", "health", "traffic", "noise", "farmland"]
+    issue_text = str(issues).lower()
 
-    if any(w in text_lower for w in negative_words):
-        sentiment = "Negative"
-    elif any(w in text_lower for w in positive_words):
-        sentiment = "Positive"
+    for term in high_risk_terms:
+        if term.lower() in issue_text:
+            score += 8
 
-    issues = [k for k in issue_keywords if k.lower() in text_lower]
-    if not issues:
-        issues = ["General"]
+    if "council" in str(source).lower() or "news" in str(source).lower():
+        score += 10
 
-    return sentiment, ", ".join(issues)
+    score = min(score, 100)
 
+    if score >= 75:
+        level = "Critical"
+    elif score >= 50:
+        level = "High"
+    elif score >= 25:
+        level = "Medium"
+    else:
+        level = "Low"
+
+    return level, score
+    
 ROOT = Path(__file__).parent
 DATA_PATH = ROOT / "data" / "mentions.csv"
 CONFIG_PATH = ROOT / "config.yaml"
