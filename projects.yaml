@@ -1,0 +1,70 @@
+projects:
+  - id: sbtl
+    name: Sudbury Barrie Transmission Line
+    type: transmission line
+    aliases:
+      - SBTL
+      - Sudbury Barrie Transmission
+      - Sudbury to Barrie Transmission Line
+      - Barrie Transmission Line
+    locations:
+      - Barrie Ontario
+      - Sudbury Ontario
+      - Parry Sound Ontario
+      - Gravenhurst Ontario
+      - Simcoe County
+      - Muskoka
+      - Parry Sound District
+    issue_keywords:
+      - Indigenous consultation
+      - visual impact
+      - construction disruption
+      - traffic
+      - noise
+      - erosion
+      - slope stability
+      - wetlands
+      - tree clearing
+      - property values
+      - farmland
+      - EMF
+    similar_project_types:
+      - transmission line
+      - substation
+      - hydro corridor
+      - road widening
+      - aggregate pit
+      - landfill
+      - renewable energy
+      - large development
+    source_urls:
+      - https://news.google.com/rss/search?q=%22Sudbury%20Barrie%20Transmission%20Line%22&hl=en-CA&gl=CA&ceid=CA:en
+
+  - id: example_station
+    name: Example Municipal Transformer Station
+    type: transformer station
+    aliases:
+      - Example TS
+      - municipal transformer station
+    locations:
+      - London Ontario
+      - St. Thomas Ontario
+    issue_keywords:
+      - land use compatibility
+      - visual impact
+      - noise
+      - traffic
+      - EMF
+      - property values
+      - construction disruption
+    similar_project_types:
+      - transformer station
+      - substation
+      - transmission line
+      - industrial development
+    source_urls: []
+settings:
+  scan_frequency_hours: 6
+  max_results_per_project: 25
+  lookback_days: 3650
+  alert_threshold: 70
