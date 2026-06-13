@@ -738,7 +738,7 @@ projects:
       - small modular reactor
       - SMR
       
-      similar_project_types:
+    similar_project_types:
       # Electricity / energy transmission and distribution
       - transmission line
       - high voltage transmission line
