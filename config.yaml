@@ -1,0 +1,47 @@
+project:
+  name: "Example Transmission Line"
+  aliases:
+    - "Example Tx Line"
+    - "Example Powerline"
+  locations:
+    - "St. Thomas"
+    - "London Ontario"
+    - "Ontario"
+  issue_keywords:
+    - "trees"
+    - "wetlands"
+    - "property values"
+    - "EMF"
+    - "farmland"
+    - "Indigenous consultation"
+    - "visual impact"
+    - "construction disruption"
+    - "traffic"
+    - "noise"
+    - "erosion"
+    - "slope stability"
+
+risk:
+  high_severity_issues:
+    - "Indigenous consultation"
+    - "wetlands"
+    - "property values"
+    - "EMF"
+    - "erosion"
+    - "slope stability"
+  medium_severity_issues:
+    - "trees"
+    - "farmland"
+    - "visual impact"
+    - "traffic"
+    - "noise"
+
+sources:
+  rss_feeds:
+    - "https://www.cbc.ca/cmlink/rss-canada-london"
+    - "https://globalnews.ca/london/feed/"
+  reddit_subreddits:
+    - "ontario"
+    - "londonontario"
+    - "StThomasOntario"
+  municipal_rss_feeds: []
