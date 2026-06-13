@@ -11,9 +11,26 @@ from sample_data import sample_mentions
 from rss_news import collect_rss_feeds, collect_google_news
 from reddit import collect_reddit_public
 from municipal import collect_municipal_rss
-from classify import classify_mention
 from risk_score import calculate_risk
 from brief import build_weekly_brief
+
+def classify_mention(text, issue_keywords):
+    text_lower = str(text).lower()
+
+    sentiment = "Neutral"
+    negative_words = ["oppose", "concern", "risk", "angry", "lawsuit", "damage", "unsafe", "noise", "traffic", "wetland", "trees"]
+    positive_words = ["support", "benefit", "opportunity", "needed", "improve", "approve"]
+
+    if any(w in text_lower for w in negative_words):
+        sentiment = "Negative"
+    elif any(w in text_lower for w in positive_words):
+        sentiment = "Positive"
+
+    issues = [k for k in issue_keywords if k.lower() in text_lower]
+    if not issues:
+        issues = ["General"]
+
+    return sentiment, ", ".join(issues)
 
 ROOT = Path(__file__).parent
 DATA_PATH = ROOT / "data" / "mentions.csv"
