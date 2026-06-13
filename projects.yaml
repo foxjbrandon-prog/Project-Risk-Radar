@@ -2,19 +2,18 @@ projects:
   - id: sbtl
     name: Sudbury Barrie Transmission Line
     type: transmission line
+    
     aliases:
       - SBTL
       - Sudbury Barrie Transmission
       - Sudbury to Barrie Transmission Line
       - Barrie Transmission Line
+      
     locations:
-      # Separated cities / single-tier anchors
       - City of Barrie
       - City of Orillia
       - City of Greater Sudbury
       - City of North Bay
-    
-      # Simcoe County / south Georgian Bay / Highway 11 edge
       - County of Simcoe
       - Town of Collingwood
       - Town of Midland
@@ -28,8 +27,6 @@ projects:
       - Township of Tay
       - Township of Tiny
       - Township of Ramara
-    
-      # Muskoka
       - District Municipality of Muskoka
       - Town of Bracebridge
       - Town of Gravenhurst
@@ -37,8 +34,6 @@ projects:
       - Township of Georgian Bay
       - Township of Muskoka Lakes
       - Township of Lake of Bays
-    
-      # Parry Sound District / Georgian Bay coast to Highway 11
       - Town of Parry Sound
       - Town of Kearney
       - Village of Burk's Falls
@@ -61,748 +56,687 @@ projects:
       - Township of Seguin
       - Township of Strong
       - Township of The Archipelago
-    
-      # Nipissing / Highway 11 and westward toward Sudbury
       - Municipality of West Nipissing
-    
-      # Sudbury District / Georgian Bay north shore / Highway 69 approach
       - Municipality of French River
       - Municipality of Killarney
       - Municipality of Markstay-Warren
       - Municipality of St. Charles
+      
     issue_keywords:
-        General opposition / NIMBY language
-      * opposition
-      * opposed
-      * oppose
-      * against the project
-      * stop the project
-      * cancel the project
-      * not in my backyard
-      * NIMBY
-      * backlash
-        * public backlash
-      * community backlash
-      * public outrage
-      * residents upset
-      * residents angry
-      * community concern
-      * community concerns
-      * public concern
-      * public concerns
-      * controversy
-      * controversial
-      * petition
-      * protest
-      * rally
-      * demonstration
-      * delegation
-      * packed council chamber
-      * public meeting
-      * town hall
-      * open house
-      * community meeting
-      * public consultation
-      * consultation concerns
-      * lack of consultation
-      * inadequate consultation
-      * poor consultation
-      * rushed consultation
-      * no consultation
-      * ignored residents
-      * residents were not heard
-      * community not heard
-      * decision already made
-      * predetermined outcome
-      * rubber stamp
-      * lack of transparency
-      * transparency concerns
-      * secretive process
-      * behind closed doors
-      * backroom deal
-      * loss of trust
-      * distrust
-      * misleading information
-      * misinformation
-      * fearmongering
-      * broken promises
-      * accountability
-      * public confidence
-      
-      Government / decision-making / process concerns
-      
-      * council
-      * municipal council
-      * council agenda
-      * council minutes
-      * council report
-      * staff report
-      * planning committee
-      * committee meeting
-      * public hearing
-      * council delegation
-      * council motion
-      * council vote
-      * mayor
-      * councillor
-      * local politician
-      * elected officials
-      * municipal approval
-      * planning approval
-      * zoning
-      * rezoning
-      * official plan amendment
-      * bylaw
-      * permit
-      * approval process
-      * environmental assessment
-      * class environmental assessment
-      * EA process
-      * impact assessment
-      * public notice
-      * notice of commencement
-      * notice of completion
-      * consultation record
-      * record of consultation
-      * freedom of information
-      * FOI
-      * appeal
-      * tribunal
-      * legal challenge
-      * judicial review
-      * lawsuit
-      * injunction
-      * complaint
-      * ombudsman
-      * integrity commissioner
-      
-      Cost / spending / affordability concerns
-      
-      * cost
-      * project cost
-      * capital cost
-      * construction cost
-      * operating cost
-      * maintenance cost
-      * taxpayer
-      * taxpayers
-      * taxpayer money
-      * tax increase
-      * property taxes
-      * utility rates
-      * ratepayer
-      * ratepayers
-      * hydro rates
-      * water rates
-      * development charges
-      * user fees
-      * public spending
-      * government spending
-      * waste of money
-      * boondoggle
-      * budget overrun
-      * cost overrun
-      * over budget
-      * poor value
-      * value for money
-      * affordability
-      * expensive
-      * unnecessary spending
-      * fiscal responsibility
-      * debt
-      * municipal debt
-      * provincial funding
-      * federal funding
-      * subsidy
-      * grant
-      * who pays
-      * funding gap
-      * long-term liability
-      * stranded asset
-      
-      Need / justification / alternatives
-      
-      * project need
-      * need for the project
-      * unnecessary project
-      * not needed
-      * no demonstrated need
-      * demand forecast
-      * growth forecast
-      * inflated growth
-      * flawed assumptions
-      * business case
-      * project justification
-      * alternatives
-      * alternative route
-      * route alternatives
-      * alternative site
-      * site alternatives
-      * preferred alternative
-      * preferred route
-      * preferred site
-      * route selection
-      * site selection
-      * corridor selection
-      * why here
-      * why this location
-      * better location
-      * better route
-      * use existing corridor
-      * collocation
-      * avoid residential areas
-      * avoid farmland
-      * avoid wetlands
-      * avoid schools
-      * avoid parks
-      * underground option
-      * bury the line
-      * do nothing alternative
-      * smaller project
-      * phased approach
-      
-      Property / landowner concerns
-      
-      * property value
-      * property values
-      * home value
-      * home values
-      * resale value
-      * property impacts
-      * landowner
-      * landowners
-      * private property
-      * private land
-      * trespass
-      * access to property
-      * access road
-      * temporary access
-      * permanent access
-      * easement
-      * right-of-way
-      * ROW
-      * expropriation
-      * taking land
-      * land acquisition
-      * compensation
-      * unfair compensation
-      * land severance
-      * crop damage
-      * farm impacts
-      * farming impacts
-      * tile drainage
-      * drainage impacts
-      * irrigation impacts
-      * livestock impacts
-      * fencing
-      * gates
-      * driveway access
-      * business access
-      * loss of enjoyment
-      * nuisance
-      * encroachment
-      
-      Construction disruption
-      
-      * construction disruption
-      * construction impacts
-      * construction noise
-      * construction traffic
-      * construction dust
-      * vibration
-      * blasting
-      * pile driving
-      * heavy equipment
-      * road closure
-      * lane closure
-      * detour
-      * traffic delay
-      * traffic congestion
-      * trucks
-      * haul route
-      * staging area
-      * laydown area
-      * work hours
-      * night work
-      * weekend work
-      * construction schedule
-      * construction duration
-      * disruption to business
-      * disruption to residents
-      * emergency access
-      * school bus route
-      * pedestrian safety
-      * cyclist safety
-      * driveway blocked
-      * utility disruption
-      * water shutoff
-      * power outage
-      * service interruption
-      
-      Traffic / transportation
-      
-      * traffic
-      * congestion
-      * road safety
-      * speeding
-      * truck traffic
-      * heavy truck traffic
-      * haul trucks
-      * dangerous intersection
-      * collision risk
-      * pedestrian safety
-      * cyclist safety
-      * school zone
-      * school safety
-      * emergency response
-      * emergency access
-      * ambulance access
-      * fire access
-      * parking
-      * loss of parking
-      * transit impacts
-      * active transportation
-      * road widening
-      * detours
-      * cut-through traffic
-      * traffic calming
-      
-      Noise / vibration / nuisance
-      
-      * noise
-      * noise impact
-      * constant noise
-      * construction noise
-      * operational noise
-      * humming
-      * buzzing
-      * vibration
-      * light pollution
-      * glare
-      * dust
-      * odour
-      * odor
-      * smell
-      * nuisance
-      * quality of life
-      * sleep disruption
-      * peace and quiet
-      * rural character
-      * neighbourhood character
-      * community character
-      
-      Visual / aesthetic / landscape concerns
-      
-      * visual impact
-      * viewshed
-      * viewscape
-      * scenic view
-      * scenic impacts
-      * visual character
-      * landscape character
-      * ugly
-      * eyesore
-      * tower height
-      * structure height
-      * poles
-      * transmission towers
-      * hydro towers
-      * skyline
-      * shadow
-      * lighting
-      * tree screen
-      * screening
-      * buffer
-      * landscape buffer
-      * property screening
-      * rural landscape
-      * cottage country
-      * tourism impacts
-      * heritage landscape
-      
-      Natural environment
-      
-      * tree clearing
-      * trees
-      * mature trees
-      * forest
-      * woodlot
-      * vegetation removal
-      * deforestation
-      * habitat loss
-      * wildlife habitat
-      * species at risk
-      * endangered species
-      * threatened species
-      * birds
-      * migratory birds
-      * nesting birds
-      * bats
-      * turtles
-      * snakes
-      * fish habitat
-      * wetlands
-      * wetland
-      * swamp
-      * marsh
-      * bog
-      * watercourse
-      * creek
-      * stream
-      * river
-      * lake
-      * shoreline
-      * floodplain
-      * stormwater
-      * drainage
-      * erosion
-      * sediment
-      * sedimentation
-      * slope stability
-      * steep slope
-      * landslide
-      * contamination
-      * contaminated soil
-      * groundwater
-      * aquifer
-      * drinking water
-      * well water
-      * source water protection
-      * invasive species
-      * biodiversity
-      * ecological function
-      * ecological corridor
-      * wildlife corridor
-      * fragmentation
-      * climate change
-      * carbon emissions
-      * carbon footprint
-      * loss of green space
-      * parkland
-      * conservation area
-      * natural heritage
-      * environmentally sensitive area
-      * significant woodland
-      * significant wetland
-      * significant wildlife habitat
-      
-      Agriculture / rural economy
-      
-      * farmland
-      * prime agricultural land
-      * agricultural land
-      * farming
-      * farm operation
-      * farm viability
-      * crop loss
-      * crop damage
-      * livestock
-      * barns
-      * farm access
-      * farm equipment
-      * tile drains
-      * soil compaction
-      * biosecurity
-      * rural roads
-      * rural character
-      * severance of farm
-      * loss of agricultural land
-      * food production
-      * farm business
-      
-      Indigenous rights / consultation / archaeology / culture
-      
-      * Indigenous consultation
-      * Indigenous rights
-      * Aboriginal rights
-      * treaty rights
-      * duty to consult
-      * rights holders
-      * First Nation
-      * First Nations
-      * Métis
-      * Inuit
-      * traditional territory
-      * traditional land use
-      * land use
-      * harvesting rights
-      * hunting
-      * fishing
-      * trapping
-      * medicines
-      * cultural heritage
-      * cultural values
-      * sacred site
-      * burial site
-      * archaeology
-      * archaeological
-      * archaeological resources
-      * artifacts
-      * ancestors
-      * engagement with Indigenous communities
-      * Indigenous knowledge
-      * traditional knowledge
-      * cumulative effects on rights
-      
-      Health / safety / perceived risk
-      
-      * health concerns
-      * health risk
-      * public health
-      * safety
-      * public safety
-      * children’s health
-      * school impacts
-      * seniors
-      * vulnerable populations
-      * EMF
-      * electromagnetic field
-      * electromagnetic fields
-      * radiation
-      * air quality
-      * dust exposure
-      * noise exposure
-      * drinking water safety
-      * well contamination
-      * fire risk
-      * explosion risk
-      * chemical exposure
-      * hazardous materials
-      * toxic
-      * cancer
-      * asthma
-      * stress
-      * anxiety
-      * mental health
-      * emergency preparedness
-      * evacuation
-      * risk to children
-      * risk to seniors
-      
-      Equity / fairness / social justice
-      
-      * fairness
-      * unfair
-      * environmental justice
-      * social justice
-      * inequitable
-      * vulnerable community
-      * marginalized community
-      * low income
-      * affordable housing
-      * renters
-      * seniors
-      * disability
-      * accessibility
-      * disproportionate impact
-      * cumulative burden
-      * community benefit
-      * local benefit
-      * no local benefit
-      * benefits elsewhere
-      * burden on residents
-      * rural burden
-      * urban benefit rural cost
-      * sacrifice zone
-      
-      Growth / development / planning concerns
-      
-      * overdevelopment
-      * too much growth
-      * growth pressure
-      * urban sprawl
-      * density
-      * high density
-      * neighbourhood character
-      * incompatible development
-      * land use compatibility
-      * intensification
-      * loss of greenfield
-      * loss of open space
-      * subdivision
-      * development application
-      * developer
-      * developer influence
-      * planning justification
-      * growth plan
-      * official plan
-      * zoning change
-      * urban boundary
-      * settlement area
-      * infrastructure capacity
-      * servicing capacity
-      * water capacity
-      * wastewater capacity
-      * school capacity
-      * hospital capacity
-      * community services
-      
-      Trust in proponent / developer / utility
-      
-      * developer
-      * proponent
-      * utility
-      * Hydro One
-      * ministry
-      * agency
-      * corporation
-      * profit
-      * corporate interests
-      * private interests
-      * developer-driven
-      * utility-driven
-      * lack of accountability
-      * not trustworthy
-      * poor track record
-      * previous violations
-      * non-compliance
-      * broken commitment
-      * mitigation failure
-      * monitoring failure
-      * enforcement
-      * who is responsible
-      * liability
-      
-      Mitigation / monitoring / enforcement
-      
-      * mitigation
-      * mitigation measures
-      * inadequate mitigation
-      * weak mitigation
-      * monitoring
-      * environmental monitoring
-      * compliance monitoring
-      * enforcement
-      * conditions of approval
-      * commitments
-      * follow-up
-      * adaptive management
-      * restoration
-      * compensation planting
-      * tree replacement
-      * habitat compensation
-      * erosion control
-      * sediment control
-      * dust control
-      * noise barrier
-      * visual screening
-      * complaint resolution
-      * grievance mechanism
-      
-      Legal / regulatory / approvals
-      
-      * approval
-      * permit
-      * licence
-      * license
-      * environmental compliance approval
-      * ECA
-      * environmental activity and sector registry
-      * EASR
-      * species at risk permit
-      * conservation authority
-      * MECP
-      * MNRF
-      * OEB
-      * IAAC
-      * Impact Assessment Agency
-      * Environmental Registry
-      * registry notice
-      * conditions
-      * non-compliance
-      * violation
-      * enforcement order
-      * stop work order
-      * appeal
-      * tribunal
-      * hearing
-      * legal challenge
-      * judicial review
-      * injunction
-      * settlement
-      
-      Media / escalation indicators
-      
-      * news article
-      * local news
-      * media coverage
-      * front page
-      * editorial
-      * letter to the editor
-      * opinion piece
-      * social media
-      * Facebook group
-      * Reddit
-      * X
-      * Twitter
-      * YouTube
-      * viral
-      * trending
-      * shared widely
-      * petition signatures
-      * online petition
-      * community group
-      * residents association
-      * ratepayers association
-      * watchdog group
-      * environmental group
-      * advocacy group
-      * coalition
-      * campaign
-      * save our
-      * stop the
-      * protect our
-      
-      Project-specific infrastructure terms
-      
-      * transmission line
-      * power line
-      * hydro line
-      * hydro corridor
-      * transformer station
-      * substation
-      * switching station
-      * battery storage
-      * BESS
-      * solar farm
-      * wind turbine
-      * wind farm
-      * pipeline
-      * natural gas
-      * landfill
-      * waste facility
-      * aggregate pit
-      * quarry
-      * road widening
-      * highway
-      * bridge
-      * culvert
-      * rail
-      * transit
-      * bus rapid transit
-      * wastewater treatment plant
-      * sewage
-      * water treatment plant
-      * stormwater pond
-      * pumping station
-      * municipal drain
-      * broadband tower
-      * cell tower
-      * data centre
-      * data center
-      * industrial park
-      * warehouse
-      * logistics facility
-      * manufacturing plant
-      * mine
-      * mining
-      * tailings
-      * power generation
-      * energy storage
-      * hydrogen
-      * nuclear
-      * small modular reactor
-      * SMR
+      - opposition
+      - opposed
+      - oppose
+      - against the project
+      - stop the project
+      - cancel the project
+      - not in my backyard
+      - NIMBY
+      - backlash
+      - public backlash
+      - community backlash
+      - public outrage
+      - residents upset
+      - residents angry
+      - community concern
+      - community concerns
+      - public concern
+      - public concerns
+      - controversy
+      - controversial
+      - petition
+      - protest
+      - rally
+      - demonstration
+      - delegation
+      - packed council chamber
+      - public meeting
+      - town hall
+      - open house
+      - community meeting
+      - public consultation
+      - consultation concerns
+      - lack of consultation
+      - inadequate consultation
+      - poor consultation
+      - rushed consultation
+      - no consultation
+      - ignored residents
+      - residents were not heard
+      - community not heard
+      - decision already made
+      - predetermined outcome
+      - rubber stamp
+      - lack of transparency
+      - transparency concerns
+      - secretive process
+      - behind closed doors
+      - backroom deal
+      - loss of trust
+      - distrust
+      - misleading information
+      - misinformation
+      - fearmongering
+      - broken promises
+      - accountability
+      - public confidence      
+      - council
+      - municipal council
+      - council agenda
+      - council minutes
+      - council report
+      - staff report
+      - planning committee
+      - committee meeting
+      - public hearing
+      - council delegation
+      - council motion
+      - council vote
+      - mayor
+      - councillor
+      - local politician
+      - elected officials
+      - municipal approval
+      - planning approval
+      - zoning
+      - rezoning
+      - official plan amendment
+      - bylaw
+      - permit
+      - approval process
+      - environmental assessment
+      - class environmental assessment
+      - EA process
+      - impact assessment
+      - public notice
+      - notice of commencement
+      - notice of completion
+      - consultation record
+      - record of consultation
+      - freedom of information
+      - FOI
+      - appeal
+      - tribunal
+      - legal challenge
+      - judicial review
+      - lawsuit
+      - injunction
+      - complaint
+      - ombudsman
+      - integrity commissioner
+      - cost
+      - project cost
+      - capital cost
+      - construction cost
+      - operating cost
+      - maintenance cost
+      - taxpayer
+      - taxpayers
+      - taxpayer money
+      - tax increase
+      - property taxes
+      - utility rates
+      - ratepayer
+      - ratepayers
+      - hydro rates
+      - water rates
+      - development charges
+      - user fees
+      - public spending
+      - government spending
+      - waste of money
+      - boondoggle
+      - budget overrun
+      - cost overrun
+      - over budget
+      - poor value
+      - value for money
+      - affordability
+      - expensive
+      - unnecessary spending
+      - fiscal responsibility
+      - debt
+      - municipal debt
+      - provincial funding
+      - federal funding
+      - subsidy
+      - grant
+      - who pays
+      - funding gap
+      - long-term liability
+      - stranded asset
+      - project need
+      - need for the project
+      - unnecessary project
+      - not needed
+      - no demonstrated need
+      - demand forecast
+      - growth forecast
+      - inflated growth
+      - flawed assumptions
+      - business case
+      - project justification
+      - alternatives
+      - alternative route
+      - route alternatives
+      - alternative site
+      - site alternatives
+      - preferred alternative
+      - preferred route
+      - preferred site
+      - route selection
+      - site selection
+      - corridor selection
+      - why here
+      - why this location
+      - better location
+      - better route
+      - use existing corridor
+      - collocation
+      - avoid residential areas
+      - avoid farmland
+      - avoid wetlands
+      - avoid schools
+      - avoid parks
+      - underground option
+      - bury the line
+      - do nothing alternative
+      - smaller project
+      - phased approach
+      - property value
+      - property values
+      - home value
+      - home values
+      - resale value
+      - property impacts
+      - landowner
+      - landowners
+      - private property
+      - private land
+      - trespass
+      - access to property
+      - access road
+      - temporary access
+      - permanent access
+      - easement
+      - right-of-way
+      - ROW
+      - expropriation
+      - taking land
+      - land acquisition
+      - compensation
+      - unfair compensation
+      - land severance
+      - crop damage
+      - farm impacts
+      - farming impacts
+      - tile drainage
+      - drainage impacts
+      - irrigation impacts
+      - livestock impacts
+      - fencing
+      - gates
+      - driveway access
+      - business access
+      - loss of enjoyment
+      - nuisance
+      - encroachment
+      - construction disruption
+      - construction impacts
+      - construction noise
+      - construction traffic
+      - construction dust
+      - vibration
+      - blasting
+      - pile driving
+      - heavy equipment
+      - road closure
+      - lane closure
+      - detour
+      - traffic delay
+      - traffic congestion
+      - trucks
+      - haul route
+      - staging area
+      - laydown area
+      - work hours
+      - night work
+      - weekend work
+      - construction schedule
+      - construction duration
+      - disruption to business
+      - disruption to residents
+      - emergency access
+      - school bus route
+      - pedestrian safety
+      - cyclist safety
+      - driveway blocked
+      - utility disruption
+      - water shutoff
+      - power outage
+      - service interruption
+      - traffic
+      - congestion
+      - road safety
+      - speeding
+      - truck traffic
+      - heavy truck traffic
+      - haul trucks
+      - dangerous intersection
+      - collision risk
+      - pedestrian safety
+      - cyclist safety
+      - school zone
+      - school safety
+      - emergency response
+      - emergency access
+      - ambulance access
+      - fire access
+      - parking
+      - loss of parking
+      - transit impacts
+      - active transportation
+      - road widening
+      - detours
+      - cut-through traffic
+      - traffic calming
+      - noise
+      - noise impact
+      - constant noise
+      - construction noise
+      - operational noise
+      - humming
+      - buzzing
+      - vibration
+      - light pollution
+      - glare
+      - dust
+      - odour
+      - odor
+      - smell
+      - nuisance
+      - quality of life
+      - sleep disruption
+      - peace and quiet
+      - rural character
+      - neighbourhood character
+      - community character    
+      - visual impact
+      - viewshed
+      - viewscape
+      - scenic view
+      - scenic impacts
+      - visual character
+      - landscape character
+      - ugly
+      - eyesore
+      - tower height
+      - structure height
+      - poles
+      - transmission towers
+      - hydro towers
+      - skyline
+      - shadow
+      - lighting
+      - tree screen
+      - screening
+      - buffer
+      - landscape buffer
+      - property screening
+      - rural landscape
+      - cottage country
+      - tourism impacts
+      - heritage landscape
+      - tree clearing
+      - trees
+      - mature trees
+      - forest
+      - woodlot
+      - vegetation removal
+      - deforestation
+      - habitat loss
+      - wildlife habitat
+      - species at risk
+      - endangered species
+      - threatened species
+      - birds
+      - migratory birds
+      - nesting birds
+      - bats
+      - turtles
+      - snakes
+      - fish habitat
+      - wetlands
+      - wetland
+      - swamp
+      - marsh
+      - bog
+      - watercourse
+      - creek
+      - stream
+      - river
+      - lake
+      - shoreline
+      - floodplain
+      - stormwater
+      - drainage
+      - erosion
+      - sediment
+      - sedimentation
+      - slope stability
+      - steep slope
+      - landslide
+      - contamination
+      - contaminated soil
+      - groundwater
+      - aquifer
+      - drinking water
+      - well water
+      - source water protection
+      - invasive species
+      - biodiversity
+      - ecological function
+      - ecological corridor
+      - wildlife corridor
+      - fragmentation
+      - climate change
+      - carbon emissions
+      - carbon footprint
+      - loss of green space
+      - parkland
+      - conservation area
+      - natural heritage
+      - environmentally sensitive area
+      - significant woodland
+      - significant wetland
+      - significant wildlife habitat
+      - farmland
+      - prime agricultural land
+      - agricultural land
+      - farming
+      - farm operation
+      - farm viability
+      - crop loss
+      - crop damage
+      - livestock
+      - barns
+      - farm access
+      - farm equipment
+      - tile drains
+      - soil compaction
+      - biosecurity
+      - rural roads
+      - rural character
+      - severance of farm
+      - loss of agricultural land
+      - food production
+      - farm business
+      - Indigenous consultation
+      - Indigenous rights
+      - Aboriginal rights
+      - treaty rights
+      - duty to consult
+      - rights holders
+      - First Nation
+      - First Nations
+      - Métis
+      - Inuit
+      - traditional territory
+      - traditional land use
+      - land use
+      - harvesting rights
+      - hunting
+      - fishing
+      - trapping
+      - medicines
+      - cultural heritage
+      - cultural values
+      - sacred site
+      - burial site
+      - archaeology
+      - archaeological
+      - archaeological resources
+      - artifacts
+      - ancestors
+      - engagement with Indigenous communities
+      - Indigenous knowledge
+      - traditional knowledge
+      - cumulative effects on rights
+      - health concerns
+      - health risk
+      - public health
+      - safety
+      - public safety
+      - children’s health
+      - school impacts
+      - seniors
+      - vulnerable populations
+      - EMF
+      - electromagnetic field
+      - electromagnetic fields
+      - radiation
+      - air quality
+      - dust exposure
+      - noise exposure
+      - drinking water safety
+      - well contamination
+      - fire risk
+      - explosion risk
+      - chemical exposure
+      - hazardous materials
+      - toxic
+      - cancer
+      - asthma
+      - stress
+      - anxiety
+      - mental health
+      - emergency preparedness
+      - evacuation
+      - risk to children
+      - risk to seniors
+      - fairness
+      - unfair
+      - environmental justice
+      - social justice
+      - inequitable
+      - vulnerable community
+      - marginalized community
+      - low income
+      - affordable housing
+      - renters
+      - seniors
+      - disability
+      - accessibility
+      - disproportionate impact
+      - cumulative burden
+      - community benefit
+      - local benefit
+      - no local benefit
+      - benefits elsewhere
+      - burden on residents
+      - rural burden
+      - urban benefit rural cost
+      - sacrifice zone
+      - overdevelopment
+      - too much growth
+      - growth pressure
+      - urban sprawl
+      - density
+      - high density
+      - neighbourhood character
+      - incompatible development
+      - land use compatibility
+      - intensification
+      - loss of greenfield
+      - loss of open space
+      - subdivision
+      - development application
+      - developer
+      - developer influence
+      - planning justification
+      - growth plan
+      - official plan
+      - zoning change
+      - urban boundary
+      - settlement area
+      - infrastructure capacity
+      - servicing capacity
+      - water capacity
+      - wastewater capacity
+      - school capacity
+      - hospital capacity
+      - community services
+      - developer
+      - proponent
+      - utility
+      - Hydro One
+      - ministry
+      - agency
+      - corporation
+      - profit
+      - corporate interests
+      - private interests
+      - developer-driven
+      - utility-driven
+      - lack of accountability
+      - not trustworthy
+      - poor track record
+      - previous violations
+      - non-compliance
+      - broken commitment
+      - mitigation failure
+      - monitoring failure
+      - enforcement
+      - who is responsible
+      - liability
+      - mitigation
+      - mitigation measures
+      - inadequate mitigation
+      - weak mitigation
+      - monitoring
+      - environmental monitoring
+      - compliance monitoring
+      - enforcement
+      - conditions of approval
+      - commitments
+      - follow-up
+      - adaptive management
+      - restoration
+      - compensation planting
+      - tree replacement
+      - habitat compensation
+      - erosion control
+      - sediment control
+      - dust control
+      - noise barrier
+      - visual screening
+      - complaint resolution
+      - grievance mechanism
+      - approval
+      - permit
+      - licence
+      - license
+      - environmental compliance approval
+      - ECA
+      - environmental activity and sector registry
+      - EASR
+      - species at risk permit
+      - conservation authority
+      - MECP
+      - MNRF
+      - OEB
+      - IAAC
+      - Impact Assessment Agency
+      - Environmental Registry
+      - registry notice
+      - conditions
+      - non-compliance
+      - violation
+      - enforcement order
+      - stop work order
+      - appeal
+      - tribunal
+      - hearing
+      - legal challenge
+      - judicial review
+      - injunction
+      - settlement
+      - news article
+      - local news
+      - media coverage
+      - front page
+      - editorial
+      - letter to the editor
+      - opinion piece
+      - social media
+      - Facebook group
+      - Reddit
+      - X
+      - Twitter
+      - YouTube
+      - viral
+      - trending
+      - shared widely
+      - petition signatures
+      - online petition
+      - community group
+      - residents association
+      - ratepayers association
+      - watchdog group
+      - environmental group
+      - advocacy group
+      - coalition
+      - campaign
+      - save our
+      - stop the
+      - protect our
+      - transmission line
+      - power line
+      - hydro line
+      - hydro corridor
+      - transformer station
+      - substation
+      - switching station
+      - battery storage
+      - BESS
+      - solar farm
+      - wind turbine
+      - wind farm
+      - pipeline
+      - natural gas
+      - landfill
+      - waste facility
+      - aggregate pit
+      - quarry
+      - road widening
+      - highway
+      - bridge
+      - culvert
+      - rail
+      - transit
+      - bus rapid transit
+      - wastewater treatment plant
+      - sewage
+      - water treatment plant
+      - stormwater pond
+      - pumping station
+      - municipal drain
+      - broadband tower
+      - cell tower
+      - data centre
+      - data center
+      - industrial park
+      - warehouse
+      - logistics facility
+      - manufacturing plant
+      - mine
+      - mining
+      - tailings
+      - power generation
+      - energy storage
+      - hydrogen
+      - nuclear
+      - small modular reactor
+      - SMR
       
       similar_project_types:
       # Electricity / energy transmission and distribution
@@ -826,7 +760,6 @@ projects:
       - interconnection facility
       - electricity infrastructure
       - utility corridor
-    
       # Power generation
       - wind farm
       - wind turbine
@@ -842,7 +775,6 @@ projects:
       - SMR
       - peaking plant
       - power generation facility
-    
       # Roads / highways / bridges
       - road widening
       - highway widening
@@ -867,7 +799,6 @@ projects:
       - cycling infrastructure
       - sidewalk project
       - complete street
-    
       # Transit / rail
       - bus rapid transit
       - BRT
@@ -887,7 +818,6 @@ projects:
       - rail crossing
       - grade separation
       - freight rail project
-    
       # Water / wastewater / stormwater
       - water treatment plant
       - wastewater treatment plant
@@ -912,7 +842,6 @@ projects:
       - well field
       - intake pipe
       - outfall pipe
-    
       # Waste / resource recovery
       - landfill
       - landfill expansion
@@ -929,7 +858,6 @@ projects:
       - material recovery facility
       - MRF
       - waste management facility
-    
       # Aggregate / mining / extraction
       - aggregate pit
       - gravel pit
@@ -949,7 +877,6 @@ projects:
       - haul road
       - mineral exploration
       - blasting operation
-    
       # Pipelines / linear utilities
       - natural gas pipeline
       - oil pipeline
@@ -963,7 +890,6 @@ projects:
       - valve station
       - metering station
       - pressure regulating station
-    
       # Telecommunications / digital infrastructure
       - cell tower
       - telecommunications tower
@@ -977,7 +903,6 @@ projects:
       - data center
       - server farm
       - communications facility
-    
       # Industrial / employment infrastructure
       - industrial park
       - business park
@@ -997,7 +922,6 @@ projects:
       - batch plant
       - food processing facility
       - chemical plant
-    
       # Housing / growth-related infrastructure
       - subdivision
       - residential subdivision
@@ -1014,7 +938,6 @@ projects:
       - urban expansion
       - settlement area expansion
       - greenfield development
-    
       # Public buildings / community facilities
       - school
       - new school
@@ -1037,7 +960,6 @@ projects:
       - maintenance yard
       - snow plow yard
       - depot
-    
       # Parks / recreation / tourism
       - park development
       - park expansion
@@ -1055,7 +977,6 @@ projects:
       - golf course development
       - tourism development
       - resort development
-    
       # Airports / ports / marine
       - airport expansion
       - runway expansion
@@ -1069,7 +990,6 @@ projects:
       - dredging project
       - navigation channel
       - shoreline works
-    
       # Climate / resilience / environmental works
       - flood protection
       - dike
@@ -1088,7 +1008,6 @@ projects:
       - brownfield remediation
       - soil remediation
       - groundwater remediation
-    
       # Cemeteries / sensitive land uses
       - cemetery expansion
       - crematorium
@@ -1102,8 +1021,8 @@ projects:
       - addiction treatment facility
       - supervised consumption site
       - mental health facility
+      
     source_urls:
-      source_urls:
       # Project-specific monitoring
       - https://news.google.com/rss/search?q=%22Sudbury%20Barrie%20Transmission%20Line%22&hl=en-CA&gl=CA&ceid=CA:en
       - https://news.google.com/rss/search?q=%22Sudbury%20Barrie%20Transmission%22&hl=en-CA&gl=CA&ceid=CA:en
